@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+
+        <div class=" container  py-5">
+                <h1 class="  py-4">BookMarker</h1>
+                <hr>
+                
+
+                <div class="text-center bg-light fw-bold py-5">
+                    <h4 class="mb-4">Bookmark your favorite sites</h4>
+    
+                    <label for="bookmarkName" class="form-label " >Site Name</label>
+                    <input id="bookmarkName" class="form-control mb-4 rounded w-75 m-auto" required>
+
+                    <label for="bookmarkUrl" class="form-label ">Site URl</label>
+                    <input id="bookmarkUrl" class="form-control rounded w-75 m-auto required">
+
+                    <button onclick="addbookmark()" class=" btn btn-primary mt-4 mb-4 rounded" > submit </button>
+
+                    <input id="search"onkeyup="search(this.value)" class="form-control rounded w-75 m-auto" placeholder="Search a BookMark">
+
+                </div>
+
+                <div class=" container fw-bold my-5 py-3 ">
+                        
+                    <table class="  table-light text-center table" id="Display">
+                    
+                    </table>
+                </div>
+            
+        </div>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
